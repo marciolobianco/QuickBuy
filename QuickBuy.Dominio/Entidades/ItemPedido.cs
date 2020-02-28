@@ -17,7 +17,11 @@ namespace QuickBuy.Dominio.Entidades
 
         public override void Validade()
         {
-            throw new NotImplementedException();
+
+            if (Quantidade < 1)
+            {
+                AdicionarCritica("Quantidade não pod ser nulo");
+            }
         }
     }
 }

@@ -9,7 +9,7 @@ namespace QuickBuy.Dominio.Entidades
 
         protected List<string> MensagemValidacao
         {
-            get { return _mensagemValidacao ?? (_mensagemValidacao = new List<string>); }
+            get { return _mensagemValidacao ?? (_mensagemValidacao = new List<string>()); }
         }
         private void LimparMensagemValidacao()
         {

@@ -13,7 +13,11 @@ namespace QuickBuy.Dominio.Entidades
 
         public override void Validade()
         {
-            throw new NotImplementedException();
+
+            if (string.IsNullOrWhiteSpace(Nome))
+            {
+                AdicionarCritica("Nome não pod ser nulo");
+            }
         }
     }
 }
