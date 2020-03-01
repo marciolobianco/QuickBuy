@@ -39,7 +39,7 @@ namespace QuickBuy.Web
             // databases
             var connectionstring = Configuration.GetConnectionString("conn");
             services.AddDbContext<QuickbuyContexto>(options =>
-            options.UseSqlServer(connectionstring, m => m.MigrationsAssembly("QuickBuy.Repositorio")));
+            options.UseLazyLoadingProxies().UseSqlServer(connectionstring, m => m.MigrationsAssembly("QuickBuy.Repositorio")));
 
             services.AddSpaStaticFiles(configuration =>
             {

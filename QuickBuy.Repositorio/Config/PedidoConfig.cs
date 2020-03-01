@@ -29,7 +29,7 @@ namespace QuickBuy.Repositorio.Config
             builder.Property(p => p.Estado)
                 .IsRequired()
                 .HasMaxLength(2);
-            builder.Property(p => p.NumeroCompleto)
+            builder.Property(p => p.NumeroEndereco)
                 .IsRequired()
                 .HasMaxLength(10);
             builder.Property(p => p.UsuarioId)
