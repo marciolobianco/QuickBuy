@@ -11,6 +11,8 @@ namespace QuickBuy.Dominio.Entidades
         public string Descricao { get; set; }
         public decimal Preco { get; set; }
 
+        public int quantidade { get; set; }
+
         public override void Validade()
         {
 

@@ -1,0 +1,14 @@
+{
+  "Logging": {
+    "IncludeScopes": false,
+    "LogLevel": {
+      "Default": "Warning"
+    }
+  },
+  "ConnectionStrings": {
+    "conn": "Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=QuickBuy;Data Source=DESKTOP-PIQENT3",
+    "QA": "Data Source=172.28.10.20\\INST_B;Initial Catalog=DB_GRC_SUITE_QA;Persist Security Info=True;User ID=_usrAppPortalGRC;Password=1234@asdf",
+    "DEV": "Data Source=10.25.51.5\\DEV2016;Initial Catalog=DB_GRC_SUITE_DEV;Persist Security Info=True;User ID=_usrAppPortalGRC;Password=1234@asdf",
+    "HML": "Data Source=172.28.10.20\\INST_B;Initial Catalog=DB_GRC_SUITE_HML;Persist Security Info=True;User ID=_usrAppPortalGRC;Password=1234@asdf"
+  }
+}
